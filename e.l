@@ -70,7 +70,7 @@ LETTER [a-zA-Z]
 {LTE} printf("LTE ");
 {GTE} printf("GTE ");
 {EQUAL} printf("EQUAL ");
-{NOT_EQUAL} printf("NE ");
+{NOT_EQUAL} printf("NOT_EQUAL ");
 {EQUALITY} printf("EQUALITY ");
 {OR} printf("OR ");
 {AND} printf("AND ");
