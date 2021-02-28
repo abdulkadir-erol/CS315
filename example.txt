@@ -16,9 +16,9 @@ string room1Exit = "east"
 string room1Exit = "west"
 string room1Exit = "north"
 string room1Exit = "south"
-Int fight( int strength) { strength = strength + 1
+int fight( int strength) { strength = strength + 1
 			    return strength }
-Int pickup( int wealth ) { wealth = wealth + 1
+int pickup( int wealth ) { wealth = wealth + 1
 				return wealth}
 while ( room < 6 || strength != 0 )
 {	
