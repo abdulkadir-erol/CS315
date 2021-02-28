@@ -1,0 +1,68 @@
+int room = 1
+int strength = 10
+int wealth = 10
+boolean room1Monster  = false 
+boolean room2Monster  = false 
+boolean room1Monster  = false 
+boolean room1Monster  = false 
+boolean room5Monster  = false 
+boolean room1Treasure  = false 
+boolean room2Treasure  = true 
+boolean room3Treasure  = true 
+boolean room4Treasure = false
+boolean room5Treasure = false
+string room1Exit = "east"
+string room1Exit = "east"
+string room1Exit = "west"
+string room1Exit = "north"
+string room1Exit = "south"
+Int fight( int strength) { strength = strength + 1
+			    return strength }
+Int pickup( int wealth ) { wealth = wealth + 1
+				return wealth}
+while ( room < 6 || strength != 0 )
+{	
+	if( room == 1)
+	{
+		kusout( "You have", strength, "strength and ", wealth, "wealth.")
+		if( room1Monster ) { strength = fight(strength) }
+		if( room1Treasure )  { wealth = pickup(wealth ) }
+		input = kusin( "Please enter east/west/north/south:")
+		if( input == room1Exit )  { room = room + 1}
+
+}
+	if( room == 2)
+	{
+		kusout( "You have", strength, "strength and ", wealth, "wealth.")
+		if( room2Monster ) { fight( strength) }
+		if( room2Treasure )  { pickup(wealth ) }
+		Input = kusin( "Please enter east/west/north/south:")
+		if( input == room2Exit )  { room = room + 1}
+
+	}
+	if( room == 3)
+	{
+		kusout( "You have", strength, "strength and ", wealth, "wealth.")
+		if( room3Monster ) { fight(strength) }
+		if( room3Treasure )  { pickup(wealth) }
+		eatFood( strength );
+		input = kusin( "Please enter east/west/north/south:")
+		if( input == room3Exit )  { room = room + 1}
+	}
+	if( room == 4)
+	{
+		kusout( "You have", strength, "strength and ", wealth, "wealth.")
+		if( room4Monster ) { fight( strength) }
+		if( room4Treasure )  { pickup(wealth ) }
+		input = kusin( "Please enter east/west/north/south:")
+		if( input == room4Exit )  { room = room + 1}
+	}
+	if( room == 5)
+	{
+		kusout( "You have", strength, "strength and ", wealth, "wealth.")
+		if( room5Monster ) { fight(strength) }
+		if( room5Treasure )  { pickup(wealth) }
+		input = kusin( "Please enter east/west/north/south:")
+		if( input == room5Exit )  { room = room + 1}
+	}
+}
