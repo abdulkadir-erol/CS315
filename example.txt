@@ -30,7 +30,7 @@ while ( room < 6 || strength != 0 )
 		input = kusin( "Please enter east/west/north/south:")
 		if( input == room1Exit )  { room = room + 1}
 
-}
+        }
 	if( room == 2)
 	{
 		kusout( "You have", strength, "strength and ", wealth, "wealth.")
